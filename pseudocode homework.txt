@@ -1,4 +1,7 @@
-//before make-up routine
+//Exercitiul 2
+
+
+//before make-up 
 
 Step 1: Take a seat right near the window
 Step 2: Point a standing mirror towards your face
@@ -36,3 +39,39 @@ Step 13: Take the glass to your mouth
 Step 14: Start drinking
 Step 15: If you are still thirsty, go to Step 1, else go to Step 16
 Step 16: Take a moment to feel good about yourself since you're drinking water and not Coke :)
+
+
+
+//Sorting algorithm (bubble sort)
+
+You have 10 playing cards and they have to be sorted:
+9 4 8 2 10 7 6 3 1 5 => 1 2 3 4 5 6 7 8 9 10
+
+Step 1: Start and go through the list of numbers
+Step 2: For item1 and item2 we check which one is the greatest
+Step 3: We assign the index 0 of the list to the smaller value of the two items compared
+Step 4: Start and go through the list of numbers
+Step 5: For item2 and item3 we check which one is the greatest
+Step 6: We assign the index 1 of the list to the smaller value of the two items compared
+Step 7: Start and go through the list of numbers
+Step 8: For item3 and item4 we check which one is the greatest
+Step 9: We assign the index 2 of the list to the smaller value of the two items compared
+Step 10: Start and go through the list of numbers
+Step 11: For item4 and item5 we check which one is the greatest
+Step 12: We assign the index 3 of the list to the smaller value of the two items compared
+Step 13: Start and go through the list of numbers
+Step 14: For item5 and item6 we check which one is the greatest
+Step 15: We assign the index 4 of the list to the smaller value of the two items compared
+Step 16: Start and go through the list of numbers
+Step 17: For item6 and item7 we check which one is the greatest
+Step 18: We assign the index 5 of the list to the smaller value of the two items compared
+Step 19: Start and go through the list of numbers
+Step 20: For item7 and item8 we check which one is the greatest
+Step 21: We assign the index 6 of the list to the smaller value of the two items compared
+Step 22: Start and go through the list of numbers
+Step 23: For item8 and item9 we check which one is the greatest
+Step 24: We assign the index 7 of the list to the smaller value of the two items compared
+Step 25: Start and go through the list of numbers
+Step 26: For item9 and item10 we check which one is the greatest
+Step 27: We assign the index 8 of the list to the smaller value of the two items compared
+Step 28: We assign the index 9 to the last value left
