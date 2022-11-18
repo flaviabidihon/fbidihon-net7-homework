@@ -1,4 +1,4 @@
-//Exercitiul 2
+//EXERCITIUL 2	
 
 
 //before make-up 
@@ -75,3 +75,37 @@ Step 25: Start and go through the list of numbers
 Step 26: For item9 and item10 we check which one is the greatest
 Step 27: We assign the index 8 of the list to the smaller value of the two items compared
 Step 28: We assign the index 9 to the last value left
+
+
+EXERCITIUL 4
+
+Partea I
+
+// Cred ca in exemplele oferite in cerinta exercitiului s-a strecurat o mica eroare. Calculul s-a facut cu 5% in loc de 0.5%. Mai jos am calculat cu 0.5%, iar rezultatele difera fata de exemple.
+
+Step 1: Ask the customer which is the amount he wants to withdraw from the ATM.
+Step 2: Save the input for further use in a variable called 'int amount' by using the method Convert.ToInt32(Console.ReadLine()).
+Step 3: Create a variable called 'int fee' and assign this formula to it: double fee = amount - amount * 0,005
+Step 4: If the fee is less than 1, assign to the fee this value: fee = 1
+Step 5: Print the fee value in the console like this: Console.Writeline($"For {amount} the fee will be {fee}")
+
+Partea a II-a
+
+// Voi scrie in romana, pentru ca m-a zapacit de tot algoritmul asta :))
+
+Step 1: Cere clientului sa introduca suma.
+Step 2: Salveaza suma intr-o variabila cu tipul double, numita amount.
+Step 3: Intocmeste o lista (continut de tip double) cu toate valorile bancnotelor, in ordine descrescatoare.
+Step 3: Daca suma este >= 500, imparte-o la prima valoare din lista (500) pentru a vedea cate bancote de 500 sunt necesare.
+Step 4: Daca suma este < 500 dar >= 200, imparte-o la a doua valoare din lista (200) pentru a vedea cate bancote de 200 sunt necesare.
+Step 5: Daca suma este < 200 dar >= 100, imparte-o la a treia valoare din lista (100) pentru a vedea cate bancote de 100 sunt necesare.
+Step 6: Daca suma este < 100 dar >= 50, imparte-o la a patra valoare din lista (50) pentru a vedea cate bancote de 50 sunt necesare.
+Step 7: Daca suma este < 50 dar >= 20, imparte-o la a cincea valoare din lista (20) pentru a vedea cate bancote de 20 sunt necesare.
+Step 8: Daca suma este < 20 dar >= 10, imparte-o la a sasea valoare din lista (10) pentru a vedea cate bancote de 10 sunt necesare.
+Step 9: Daca suma este < 10 dar >= 5, imparte-o la a saptea valoare din lista (5) pentru a vedea cate bancote de 5 sunt necesare.
+Step 10: Daca suma este < 5 dar >= 1, imparte-o la a opta valoare din lista (1) pentru a vedea cate bancote de 1 sunt necesare.
+Step 11: Transforma rezultatul impartirii in int (acesta este numarul necesar al bancnotei la care s-a putut imparti suma).
+Step 12: Salveaza restul impartirii intr-o variabila de tip double.
+Step 13: Inmulteste restul impartirii cu valoarea celei mai mari bancnote folosite si asigneaza-l variabilei de tip double, numita amount.
+Step 14: Cu acest ultim rezultat mergi la step 5. Si tot asa.
+Step 15. Continua (ar fi nevoie de o bucla) pana cand suma ramasa va fi mai mica decat 1 si va excede astfel tipurilor de bancnote disponibile.
