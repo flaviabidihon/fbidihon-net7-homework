@@ -158,3 +158,8 @@ rectangleColor.Color = "Blue";
 
 Console.WriteLine(circleColor.Color); // Outputs "Red"
 Console.WriteLine(rectangleColor.Color); // Outputs "Blue"
+
+
+
+Console.WriteLine();
+Console.WriteLine("-------------EXERCISE 7--------------");
