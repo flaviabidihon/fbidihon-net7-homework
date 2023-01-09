@@ -4,6 +4,7 @@ using OOP_advanced___homework.Exercise3;
 using OOP_advanced___homework.Exercise4;
 using OOP_advanced___homework.Exercise5;
 using OOP_advanced___homework.Exercise6;
+using OOP_advanced___homework.Exercise7;
 using System;
 
 
@@ -163,3 +164,30 @@ Console.WriteLine(rectangleColor.Color); // Outputs "Blue"
 
 Console.WriteLine();
 Console.WriteLine("-------------EXERCISE 7--------------");
+
+RentedRoom room1 = new RentedRoom(6);
+RentedRoom room2 = new RentedRoom(2);
+
+room1.GreetingGuest();
+Console.WriteLine($"You must pay ${room1.GetRoomPrice()}.");
+room1.SpecialMessage();
+Console.WriteLine(room1.CanRentPool());
+Console.WriteLine();
+
+room2.GreetingGuest();
+Console.WriteLine($"You must pay ${room2.GetRoomPrice()}.");
+room2.SpecialMessage();
+Console.WriteLine(room2.CanRentPool());
+Console.WriteLine();
+
+Hotel.RoomCheckout();
+Hotel.RoomCheckout("Goodbye");
+Console.WriteLine();
+
+RentedRoom room3 = new RentedRoom(1);
+room3.GreetingGuest();
+Console.WriteLine($"You must pay ${room3.GetRoomPrice()}");
+room3.ChangeTowels();
+room3.RoomReady();
+Hotel.RoomCheckout();
+Hotel.RoomCheckout("Byeee");

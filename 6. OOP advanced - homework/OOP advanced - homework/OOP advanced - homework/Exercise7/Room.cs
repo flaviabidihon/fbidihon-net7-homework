@@ -6,8 +6,18 @@ using System.Threading.Tasks;
 
 namespace OOP_advanced___homework.Exercise7
 {
-    public abstract class Room : IRoom, IHotel
+    public abstract class Room
     {
-        
+        public Room()
+        {
+            Hotel.OccupiedRooms++;
+        }
+
+        public abstract double GetRoomPrice();
+
+        public virtual void SpecialMessage()
+        {
+            Console.WriteLine($"Enjoy!");
+        }
     }
 }

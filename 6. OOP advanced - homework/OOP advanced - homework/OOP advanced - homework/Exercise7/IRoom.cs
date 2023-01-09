@@ -8,5 +8,8 @@ namespace OOP_advanced___homework.Exercise7
 {
     public interface IRoom
     {
+
+        public string ChangeTowels();
+        public void RoomReady();
     }
 }

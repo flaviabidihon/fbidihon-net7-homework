@@ -8,5 +8,7 @@ namespace OOP_advanced___homework.Exercise7
 {
     public interface IHotel
     {
+        public void GreetingGuest();
+        public bool CanRentPool();
     }
 }
