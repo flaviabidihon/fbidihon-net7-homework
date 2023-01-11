@@ -8,7 +8,7 @@ namespace OOP_advanced___homework.Exercise7
 {
     public static class Hotel
     {
-        public static string Name { get; set; } = "Pescarusul";
+        public static string Name { get; private set; } = "Pescarusul";
         public static int OccupiedRooms { get; set; } = 5;
 
         public static void RoomCheckout()
