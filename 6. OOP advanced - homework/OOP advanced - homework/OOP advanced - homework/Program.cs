@@ -191,3 +191,25 @@ room3.ChangeTowels();
 room3.RoomReady();
 Hotel.RoomCheckout();
 Hotel.RoomCheckout("Byeee");
+
+/* OUTPUT
+ 
+Welcome in Monaco! Hotel Pescarusul is happy to host you!
+You must pay $159,99.
+You have chosen the Penthouse, which means you are rich. We will keep the change.
+True
+
+Welcome in Monaco! Hotel Pescarusul is happy to host you!
+You must pay $89,99.
+*rolls eyes watching the poor* Meh... Enjoy...
+False
+
+Goodbye! Check-out time: (your date and time).
+Rooms occupied at the moment: 6
+
+Welcome in Monaco! Hotel Pescarusul is happy to host you!
+You must pay $59,99
+The towels have been changed, so your room is prepared.
+Byeee! Check-out time: (your date and time).
+Rooms occupied at the moment: 6
+*/
