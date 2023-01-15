@@ -22,5 +22,5 @@ SumAndAverage calculator1 = new SumAndAverage();
 calculator1.Calculator();
 
 Console.WriteLine();
-Console.WriteLine(" ------ EXERCISE 3 ------");
+Console.WriteLine(" ------ EXERCISE 4 ------");
 FilesExercise.Run();
