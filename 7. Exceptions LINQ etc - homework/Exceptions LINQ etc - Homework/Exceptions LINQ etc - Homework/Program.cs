@@ -1,6 +1,7 @@
 ﻿using Exceptions_LINQ_etc___Homework.Exercise1;
 using Exceptions_LINQ_etc___Homework.Exercise2;
 using Exceptions_LINQ_etc___Homework.Exercise3;
+using Exceptions_LINQ_etc___Homework.Exercise4;
 using System.Globalization;
 using System.IO;
 
@@ -22,18 +23,4 @@ using System.IO;
 
 Console.WriteLine();
 Console.WriteLine(" ------ EXERCISE 3 ------");
-string path = @"D:\\WANTSOME\\Github\\fbidihon-net7-homework\\7. Exceptions LINQ etc - homework\\Exceptions LINQ etc - Homework\\Exceptions LINQ etc - Homework\\Exercise4\\textFile.txt";
-string textFile = File.ReadAllText(path);
-Console.WriteLine(textFile);
-
-try
-{
-    string path2 = @"D:\\WANTSOME\\Github\\fbidihon-net7-homework\\7. Exceptions LINQ etc - homework\\Exceptions LINQ etc - Homework\\Exceptions LINQ etc - Homework\\Exercise4\\unexistingFile.txt";
-    string unexistingFile = File.ReadAllText(path2);
-    Console.WriteLine(unexistingFile);
-}
-catch(FileNotFoundException exception)
-{
-    Console.WriteLine(exception.Message);
-    Console.WriteLine("The file you are searching for doesn't exist.");
-}
+FilesExercise.Run();
