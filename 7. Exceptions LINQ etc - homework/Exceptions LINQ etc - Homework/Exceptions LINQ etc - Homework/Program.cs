@@ -2,6 +2,8 @@
 using Exceptions_LINQ_etc___Homework.Exercise2;
 using Exceptions_LINQ_etc___Homework.Exercise3;
 using Exceptions_LINQ_etc___Homework.Exercise4;
+using Exceptions_LINQ_etc___Homework.Exercise5;
+using Exceptions_LINQ_etc___Homework.Exercise6;
 using System.Globalization;
 using System.IO;
 
@@ -24,3 +26,12 @@ calculator1.Calculator();
 Console.WriteLine();
 Console.WriteLine(" ------ EXERCISE 4 ------");
 FilesExercise.Run();
+
+Console.WriteLine();
+Console.WriteLine(" ------ EXERCISE 5 ------");
+Console.WriteLine(DateTime.Now.ToFullDateString());
+
+Console.WriteLine();
+Console.WriteLine(" ------ EXERCISE 6 ------");
+int x = 5;
+Console.WriteLine(x.ToBinary());
