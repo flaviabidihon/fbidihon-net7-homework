@@ -267,7 +267,6 @@ FROM Sales;
 
 --exercise9
 --Create a trigger so that when a new librarian is added to the system with no library assigned (NULL on LibraryId), he / she is automatically assigned to a library.
---I can't figure out what am I missing here :(
 GO
 CREATE TRIGGER AssignToLibrary
 ON Librarians
@@ -276,12 +275,24 @@ AS
 BEGIN
 UPDATE Librarians
 SET LibraryId = 3
-WHERE Id = NULL
+WHERE LibraryId IS NULL
 END
 GO
 
 INSERT INTO Librarians
-VALUES('Paula', '2023-02-02', 1, NULL)
+VALUES('Mirel', '2023-02-02', 0, NULL)
 
 SELECT *
 FROM Librarians;
+
+--exercise10
+-- Create a transaction that should have at least three commands inside it. Based on the logic you think of use at least one savepoint and at least one rollback operation.
+BEGIN TRAN 
+UPDATE Librarians SET IsOnHoliday = 0;
+COMMIT TRAN;
+
+BEGIN TRAN 
+UPDATE Librarians SET IsOnHoliday = 1;
+SAVE TRAN InTheEndIs1;
+UPDATE Librarians SET IsOnHoliday = NULL;
+ROLLBACK TRAN InTheEndIs1;
